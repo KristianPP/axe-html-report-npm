@@ -21,6 +21,16 @@
 ``` node AxeHTMLReport.mjs readFile=deque-site.json customSummary=TestCase101 ```
 
 
+## Common problems
+
+Depending on which version of axe-cli or axe-core you use, the json report might change structures in which case the **violations** array won't be in the root level of the json but rather in the first element of the root array.
+This script is made to work with the latest version of axe core so in the code you will see
+``` results: rawAxeResults[0], ```
+
+But if you plan to use an older version, just remove the array brackets
+``` results: rawAxeResults, ```
+
+
 
 
 
