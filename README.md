@@ -18,7 +18,7 @@
 
 
 ### Example commands:
-``` node AxeHTMLReport.mjs readFile=AxeResults.json customSummary=TestCase101 ```
+``` node AxeHTMLReport.mjs readFile=deque-site.json customSummary=TestCase101 ```
 
 
 
